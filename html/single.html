@@ -1,0 +1,323 @@
+<html lang="ja">
+
+<head>
+    <title>WPMatch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/png" href="/favicon.png"/> -->
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="../dist/css/style.min.css" type="text/css">
+    <!-- Link js -->
+    <script defer src="../dist/js/main.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="header-main--top">
+            <div class="container d-flex align-items-center justify-content-between">
+                <button class="d-block d-md-none js-click toggle-search" data-click="sidebar-left"></button>
+                <h1 class="header-main--logo"><a href="#"><img src="../dist/images/logo-main.png" alt=""></a></h1>
+                <div class="header-main--right d-none d-md-flex align-items-center justify-content-between">
+                    <div class="phone-number--header text-center">
+                        <h2>090-000-0001</h2>
+                        <p>受付時間 10:00〜17:00(土日祝日定休)</p>
+                    </div>
+                    <div class="button-group d-flex">
+                        <a href="#" class="button-01">挙式プランを探す</a>
+                        <a href="#" class="button-02">挙式プランを掲載</a>
+                    </div>
+                </div>
+                <button class="d-block d-md-none js-click toggle-menu" data-click="mobile-menu"></button>
+            </div>
+        </div>
+        <div class="header-main--nav d-none d-md-block">
+            <div class="container">
+                <nav>
+                    <ul class="d-flex align-items-center">
+                        <li><a href="#">トップ</a></li>
+                        <li><a href="#">挙式プランを探す</a></li>
+                        <li><a href="#">挙式プランを掲載する</a></li>
+                        <li><a href="#">挙式マガジン</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="mobile-menu d-md-none">
+            <div class="phone-number--header text-center">
+                <h2>090-000-0001</h2>
+                <p>受付時間 10:00〜17:00(土日祝日定休)</p>
+            </div>
+            <ul class="mobile-menu--content">
+                <li><a href="#">トップ</a></li>
+                <li><a href="#">挙式プランを探す</a></li>
+                <li><a href="#">挙式プランを掲載する</a></li>
+                <li><a href="#">挙式マガジン</a></li>
+            </ul>
+            <ul class="mobile-menu--second">
+                <li><a href="#">ログイン</a></li>
+                <li><a href="#">ご利用規約</a></li>
+                <li><a href="#">プライバシーポリシー</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+            <p class="footer-text text-center">©2021 WEDDING PARK CO., LTD.</p>
+        </div>
+    </header>
+    <div id="content" class="sub-page">
+        <section class="main-banner">
+            <div class="thumbnail">
+                <img src="../dist/images/image-banner.png" alt="">
+                <div class="label align-self-start d-inline-block d-md-none">キープ</div>
+            </div>
+            <div class="container">
+                <div class="detail d-flex justify-content-between">
+                    <div class="left-content">
+                        <div class="d-flex align-items-center">
+                            <h1 class="title">名古屋栄錦ウエディングセンター</h1>
+                            <p class="d-none d-md-block">価格 <span>150</span> 万円</p>
+                        </div>
+                        <ul class="sub-detail d-flex">
+                            <li>愛知県 / 春日井市</li>
+                            <li>ホテル挙式</li>
+                            <li>ゲスト10名100万円</li>
+                        </ul>
+                    </div>
+                    <div class="label align-self-start d-none d-md-block">キープ</div>
+                </div>
+            </div>
+        </section>
+        <section class="item-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-3">
+                        <div class="sidebar-left">
+                            <h2 class="sidebar-left--title">絞り込んで探す</h2>
+                            <div class="sidebar-left--section">
+                                <h3 class="title">地域</h3>
+                                <ul>
+                                    <li class="sub-menu">
+                                        <p class="js-collapse">愛知県</p>
+                                        <ul class="collapse">
+                                            <li><a href="#">名古屋市</a></li>
+                                            <li class="active"><a href="#">春日井市</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-menu">
+                                        <p class="js-collapse">岐阜県</p>
+                                        <ul class="collapse">
+                                            <li><a href="#">名古屋市</a></li>
+                                            <li class="active"><a href="#">春日井市</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-menu">
+                                        <p class="js-collapse">三重県</p>
+                                        <ul class="collapse">
+                                            <li><a href="#">名古屋市</a></li>
+                                            <li class="active"><a href="#">春日井市</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-left--section">
+                                <h3 class="title">タイプ</h3>
+                                <ul>
+                                    <li><a href="#">ホテル挙式</a></li>
+                                    <li><a href="#">神社挙式</a></li>
+                                    <li><a href="#">チャペル挙式</a></li>
+                                    <li><a href="#">レストラン挙式</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-left--section">
+                                <h3 class="title">金額</h3>
+                                <ul>
+                                    <li><a href="#">10万円未満</a></li>
+                                    <li><a href="#">10万円以上〜30万円未満</a></li>
+                                    <li><a href="#">30万円以上〜50万円未満</a></li>
+                                    <li><a href="#">50万円以上〜100万円未満</a></li>
+                                    <li><a href="#">100万円以上〜300万円未満</a></li>
+                                    <li><a href="#">300万円以上</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-left--section">
+                                <h3 class="title">タグ</h3>
+                                <ul>
+                                    <li class="active"><a href="#">#おしゃれな景色</a></li>
+                                    <li><a href="#">#10人規模</a></li>
+                                    <li><a href="#">#30人規模</a></li>
+                                    <li><a href="#">#高級ホテル</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="sidebar-btn text-center">挙式プランを掲載</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-9">
+                        <div class="item-description has-border">
+                            <div class="d-flex d-lg-none justify-content-between flex-row">
+                                <p class="price gray">定価 <span>250</span> 万円</p>
+                                <img src="../dist/images/icon-left-to-right.png" alt="" class="align-self-end">
+                                <p class="price large">割引 <span>250</span> 万円</p>
+                            </div>
+                            <h2 class="title">【栄の中心にGRAND OPEN】20年10月、遂に幕を開けた歴史×先進が宿る新スタイル結婚式</h2>
+                            <div class="d-flex">
+                                <p>名古屋栄錦ウエディングセンターはゲストのみなさんが快適に挙式をあげてもらえるように、最大限のサービスを提供します。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。
+                                </p>
+                                <div class="right-content">
+                                    <div class="d-none d-lg-flex align-items-end">
+                                        <p class="price gray">定価 <span>250</span> 万円</p>
+                                        <img src="../dist/images/icon-left-to-right.png" alt="">
+                                        <p class="price large">割引 <span>250</span> 万円</p>
+                                    </div>
+                                    <p class="text-small">
+                                        割引についてはここに書かれます。割引についてはここに書かれます。割引についてはここに書かれます。割引についてはここに書かれます。割引についてはここに書かれます。割引についてはここに書かれます。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="item-gallery">
+                            <h3 class="title-section">このプランのフォトギャラリー</h3>
+                            <div class="row">
+                                <div class="col-6 col-lg-4">
+                                    <img src="../dist/images/image-gallery.png" alt="">
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <img src="../dist/images/image-gallery.png" alt="">
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <img src="../dist/images/image-gallery.png" alt="">
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <img src="../dist/images/image-gallery.png" alt="">
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <img src="../dist/images/image-gallery.png" alt="">
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <img src="../dist/images/image-gallery.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="item-features has-border">
+                            <h3 class="title-section">このプランに含まれる内容</h3>
+                            <ul>
+                                <li>
+                                    <img src="../dist/images/icon-check.png" alt="">
+                                    <p>新郎新婦衣装</p>
+                                </li>
+                                <li>
+                                    <img src="../dist/images/icon-check.png" alt="">
+                                    <p>メイク</p>
+                                </li>
+                                <li>
+                                    <img src="../dist/images/icon-check.png" alt="">
+                                    <p>ご家族控室</p>
+                                </li>
+                                <li>
+                                    <img src="../dist/images/icon-check.png" alt="">
+                                    <p>ゲスト10名の食事</p>
+                                </li>
+                                <li>
+                                    <img src="../dist/images/icon-check.png" alt="">
+                                    <p>ゲスト10人＋5名分の引き出物</p>
+                                </li>
+                                <li>
+                                    <img src="../dist/images/icon-check.png" alt="">
+                                    <p>新郎新婦衣装</p>
+                                </li>
+                                <li>
+                                    <img src="../dist/images/icon-check.png" alt="">
+                                    <p>メイク</p>
+                                </li>
+                                <li>
+                                    <img src="../dist/images/icon-check.png" alt="">
+                                    <p>ご家族控室</p>
+                                </li>
+                                <li>
+                                    <img src="../dist/images/icon-check.png" alt="">
+                                    <p>ゲスト10名の食事</p>
+                                </li>
+                                <li>
+                                    <img src="../dist/images/icon-check.png" alt="">
+                                    <p>ゲスト10人＋5名分の引き出物</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="list-item--point">
+                            <div class="item-point has-border">
+                                <h3 class="title-section">ポイント1</h3>
+                                <div class="d-flex">
+                                    <img src="../dist/images/image-gallery.png" alt="">
+                                    <p>名古屋栄錦ウエディングセンターはゲストのみなさんが快適に挙式をあげてもらえるように、最大限のサービスを提供します。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-point has-border">
+                                <h3 class="title-section">ポイント1</h3>
+                                <div class="d-flex">
+                                    <img src="../dist/images/image-gallery.png" alt="">
+                                    <p>名古屋栄錦ウエディングセンターはゲストのみなさんが快適に挙式をあげてもらえるように、最大限のサービスを提供します。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-point has-border">
+                                <h3 class="title-section">ポイント1</h3>
+                                <div class="d-flex">
+                                    <img src="../dist/images/image-gallery.png" alt="">
+                                    <p>名古屋栄錦ウエディングセンターはゲストのみなさんが快適に挙式をあげてもらえるように、最大限のサービスを提供します。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="note-area">
+                            <h3 class="title-section">その他・ご注意事項</h3>
+                            <ul>
+                                <li>※ゲスト10名の食事は食事Aプランになっています。ドリンクは別です。</li>
+                                <li>※ゲスト10名の食事のドリンクは、各自注文となっています。</li>
+                                <li>※ご家族控室はおおよそ、5名のスペースがございます。</li>
+                                <li>※メイクは新婦のみにつきます。新郎はヘアスタイリングのみとなります。</li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="request-area">
+                            <h3 class="title-section">お問い合わせ・ご相談</h3>
+                            <form action="" class="has-border">
+                                <textarea name="" id="" cols="30" rows="15"></textarea>
+                                <div class="text-center">
+                                    <button type="submit">送信</button>
+                                </div>
+                            </form>
+                        </div>
+                        <hr>
+                        <div class="tags-area">
+                            <h3 class="title-section">関連タグ</h3>
+                            <ul class="d-flex align-items-center">
+                                <li><a href="#">#タグ</a></li>
+                                <li><a href="#">#タグ</a></li>
+                                <li><a href="#">#タグ</a></li>
+                            </ul>
+                        </div>
+                        <hr class="d-none d-md-block">
+                        <div class="text-center d-none d-md-block">
+                            <a href="#" class="back-toppage">戻る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer-main">
+        <div class="container">
+            <ul class="d-none d-md-flex align-items-center justify-content-center">
+                <li><a href="#">トップ</a></li>
+                <li><a href="#">ログイン</a></li>
+                <li><a href="#">ご利用規約</a></li>
+                <li><a href="#">プライバシーポリシー</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+            <p class="footer-text text-center">©2021 WEDDING PARK CO., LTD.</p>
+        </div>
+    </footer>
+</body>

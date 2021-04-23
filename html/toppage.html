@@ -1,0 +1,350 @@
+<html lang="ja">
+
+<head>
+    <title>WPMatch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/png" href="/favicon.png"/> -->
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="../dist/css/style.min.css" type="text/css">
+    <!-- Link js -->
+    <script defer src="../dist/js/main.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="header-main--top">
+            <div class="container d-flex align-items-center justify-content-between">
+                <button class="d-block d-md-none js-click toggle-search" data-click="sidebar-left"></button>
+                <h1 class="header-main--logo"><a href="#"><img src="../dist/images/logo-main.png" alt=""></a></h1>
+                <div class="header-main--right d-none d-md-flex align-items-center justify-content-between">
+                    <div class="phone-number--header text-center">
+                        <h2>090-000-0001</h2>
+                        <p>受付時間 10:00〜17:00(土日祝日定休)</p>
+                    </div>
+                    <div class="button-group d-flex">
+                        <a href="#" class="button-01">挙式プランを探す</a>
+                        <a href="#" class="button-02">挙式プランを掲載</a>
+                    </div>
+                </div>
+                <button class="d-block d-md-none js-click toggle-menu" data-click="mobile-menu"></button>
+            </div>
+        </div>
+        <div class="header-main--nav d-none d-md-block">
+            <div class="container">
+                <nav>
+                    <ul class="d-flex align-items-center">
+                        <li><a href="#">トップ</a></li>
+                        <li><a href="#">挙式プランを探す</a></li>
+                        <li><a href="#">挙式プランを掲載する</a></li>
+                        <li><a href="#">挙式マガジン</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="mobile-menu d-md-none">
+            <div class="phone-number--header text-center">
+                <h2>090-000-0001</h2>
+                <p>受付時間 10:00〜17:00(土日祝日定休)</p>
+            </div>
+            <ul class="mobile-menu--content">
+                <li><a href="#">トップ</a></li>
+                <li><a href="#">挙式プランを探す</a></li>
+                <li><a href="#">挙式プランを掲載する</a></li>
+                <li><a href="#">挙式マガジン</a></li>
+            </ul>
+            <ul class="mobile-menu--second">
+                <li><a href="#">ログイン</a></li>
+                <li><a href="#">ご利用規約</a></li>
+                <li><a href="#">プライバシーポリシー</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+            <p class="footer-text text-center">©2021 WEDDING PARK CO., LTD.</p>
+        </div>
+    </header>
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-3">
+                    <div class="sidebar-left">
+                        <h2 class="sidebar-left--title">絞り込んで探す</h2>
+                        <div class="sidebar-left--section">
+                            <h3 class="title">地域</h3>
+                            <ul>
+                                <li class="sub-menu">
+                                    <p class="js-collapse">愛知県</p>
+                                    <ul class="collapse">
+                                        <li><a href="#">名古屋市</a></li>
+                                        <li class="active"><a href="#">春日井市</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu">
+                                    <p class="js-collapse">岐阜県</p>
+                                    <ul class="collapse">
+                                        <li><a href="#">名古屋市</a></li>
+                                        <li class="active"><a href="#">春日井市</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu">
+                                    <p class="js-collapse">三重県</p>
+                                    <ul class="collapse">
+                                        <li><a href="#">名古屋市</a></li>
+                                        <li class="active"><a href="#">春日井市</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-left--section">
+                            <h3 class="title">タイプ</h3>
+                            <ul>
+                                <li><a href="#">ホテル挙式</a></li>
+                                <li><a href="#">神社挙式</a></li>
+                                <li><a href="#">チャペル挙式</a></li>
+                                <li><a href="#">レストラン挙式</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-left--section">
+                            <h3 class="title">金額</h3>
+                            <ul>
+                                <li><a href="#">10万円未満</a></li>
+                                <li><a href="#">10万円以上〜30万円未満</a></li>
+                                <li><a href="#">30万円以上〜50万円未満</a></li>
+                                <li><a href="#">50万円以上〜100万円未満</a></li>
+                                <li><a href="#">100万円以上〜300万円未満</a></li>
+                                <li><a href="#">300万円以上</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-left--section">
+                            <h3 class="title">タグ</h3>
+                            <ul>
+                                <li class="active"><a href="#">#おしゃれな景色</a></li>
+                                <li><a href="#">#10人規模</a></li>
+                                <li><a href="#">#30人規模</a></li>
+                                <li><a href="#">#高級ホテル</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="sidebar-btn text-center">挙式プランを掲載</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-9">
+                    <div class="list-post">
+                        <div class="post-item">
+                            <div class="label">キープ</div>
+                            <div class="post-item--thumbnail">
+                                <a href="#">
+                                    <img src="../dist/images/post-thumbnail.png" alt="">
+                                </a>
+                            </div>
+                            <div class="post-item--content">
+                                <h3 class="title"><a href="#">名古屋栄錦ウエディングセンター</a></h3>
+                                <ul class="sub-detail d-flex">
+                                    <li>愛知県 / 春日井市</li>
+                                    <li>ホテル挙式</li>
+                                    <li>ゲスト10名100万円</li>
+                                </ul>
+                                <p class="description">
+                                    名古屋栄錦ウエディングセンターはゲストのみなさんが快適に挙式をあげてもらえるように、最大限のサービスを提供します。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。
+                                </p>
+                                <ul class="tags-list d-flex">
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <div class="label">キープ</div>
+                            <div class="post-item--thumbnail">
+                                <a href="#">
+                                    <img src="../dist/images/post-thumbnail.png" alt="">
+                                </a>
+                            </div>
+                            <div class="post-item--content">
+                                <h3 class="title"><a href="#">名古屋栄錦ウエディングセンター</a></h3>
+                                <ul class="sub-detail d-flex">
+                                    <li>愛知県 / 春日井市</li>
+                                    <li>ホテル挙式</li>
+                                    <li>ゲスト10名100万円</li>
+                                </ul>
+                                <p class="description">
+                                    名古屋栄錦ウエディングセンターはゲストのみなさんが快適に挙式をあげてもらえるように、最大限のサービスを提供します。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。
+                                </p>
+                                <ul class="tags-list d-flex">
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <div class="label">キープ</div>
+                            <div class="post-item--thumbnail">
+                                <a href="#">
+                                    <img src="../dist/images/post-thumbnail.png" alt="">
+                                </a>
+                            </div>
+                            <div class="post-item--content">
+                                <h3 class="title"><a href="#">名古屋栄錦ウエディングセンター</a></h3>
+                                <ul class="sub-detail d-flex">
+                                    <li>愛知県 / 春日井市</li>
+                                    <li>ホテル挙式</li>
+                                    <li>ゲスト10名100万円</li>
+                                </ul>
+                                <p class="description">
+                                    名古屋栄錦ウエディングセンターはゲストのみなさんが快適に挙式をあげてもらえるように、最大限のサービスを提供します。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。
+                                </p>
+                                <ul class="tags-list d-flex">
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <div class="label">キープ</div>
+                            <div class="post-item--thumbnail">
+                                <a href="#">
+                                    <img src="../dist/images/post-thumbnail.png" alt="">
+                                </a>
+                            </div>
+                            <div class="post-item--content">
+                                <h3 class="title"><a href="#">名古屋栄錦ウエディングセンター</a></h3>
+                                <ul class="sub-detail d-flex">
+                                    <li>愛知県 / 春日井市</li>
+                                    <li>ホテル挙式</li>
+                                    <li>ゲスト10名100万円</li>
+                                </ul>
+                                <p class="description">
+                                    名古屋栄錦ウエディングセンターはゲストのみなさんが快適に挙式をあげてもらえるように、最大限のサービスを提供します。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。
+                                </p>
+                                <ul class="tags-list d-flex">
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <div class="label">キープ</div>
+                            <div class="post-item--thumbnail">
+                                <a href="#">
+                                    <img src="../dist/images/post-thumbnail.png" alt="">
+                                </a>
+                            </div>
+                            <div class="post-item--content">
+                                <h3 class="title"><a href="#">名古屋栄錦ウエディングセンター</a></h3>
+                                <ul class="sub-detail d-flex">
+                                    <li>愛知県 / 春日井市</li>
+                                    <li>ホテル挙式</li>
+                                    <li>ゲスト10名100万円</li>
+                                </ul>
+                                <p class="description">
+                                    名古屋栄錦ウエディングセンターはゲストのみなさんが快適に挙式をあげてもらえるように、最大限のサービスを提供します。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。
+                                </p>
+                                <ul class="tags-list d-flex">
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <div class="label">キープ</div>
+                            <div class="post-item--thumbnail">
+                                <a href="#">
+                                    <img src="../dist/images/post-thumbnail.png" alt="">
+                                </a>
+                            </div>
+                            <div class="post-item--content">
+                                <h3 class="title"><a href="#">名古屋栄錦ウエディングセンター</a></h3>
+                                <ul class="sub-detail d-flex">
+                                    <li>愛知県 / 春日井市</li>
+                                    <li>ホテル挙式</li>
+                                    <li>ゲスト10名100万円</li>
+                                </ul>
+                                <p class="description">
+                                    名古屋栄錦ウエディングセンターはゲストのみなさんが快適に挙式をあげてもらえるように、最大限のサービスを提供します。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。
+                                </p>
+                                <ul class="tags-list d-flex">
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <div class="label">キープ</div>
+                            <div class="post-item--thumbnail">
+                                <a href="#">
+                                    <img src="../dist/images/post-thumbnail.png" alt="">
+                                </a>
+                            </div>
+                            <div class="post-item--content">
+                                <h3 class="title"><a href="#">名古屋栄錦ウエディングセンター</a></h3>
+                                <ul class="sub-detail d-flex">
+                                    <li>愛知県 / 春日井市</li>
+                                    <li>ホテル挙式</li>
+                                    <li>ゲスト10名100万円</li>
+                                </ul>
+                                <p class="description">
+                                    名古屋栄錦ウエディングセンターはゲストのみなさんが快適に挙式をあげてもらえるように、最大限のサービスを提供します。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。
+                                </p>
+                                <ul class="tags-list d-flex">
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-item">
+                            <div class="label">キープ</div>
+                            <div class="post-item--thumbnail">
+                                <a href="#">
+                                    <img src="../dist/images/post-thumbnail.png" alt="">
+                                </a>
+                            </div>
+                            <div class="post-item--content">
+                                <h3 class="title"><a href="#">名古屋栄錦ウエディングセンター</a></h3>
+                                <ul class="sub-detail d-flex">
+                                    <li>愛知県 / 春日井市</li>
+                                    <li>ホテル挙式</li>
+                                    <li>ゲスト10名100万円</li>
+                                </ul>
+                                <p class="description">
+                                    名古屋栄錦ウエディングセンターはゲストのみなさんが快適に挙式をあげてもらえるように、最大限のサービスを提供します。この文章はサンプルですが、説明文はここに入ります。より魅力的に見えるような文章をお願いします。
+                                </p>
+                                <ul class="tags-list d-flex">
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                    <li><a href="#">#タグ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breadcrumb-main">
+                        <ul class="d-flex">
+                            <li class="active"><span>1</span></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">次へ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-main">
+        <div class="container">
+            <ul class="d-none d-md-flex align-items-center justify-content-center">
+                <li><a href="#">トップ</a></li>
+                <li><a href="#">ログイン</a></li>
+                <li><a href="#">ご利用規約</a></li>
+                <li><a href="#">プライバシーポリシー</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+            <p class="footer-text text-center">©2021 WEDDING PARK CO., LTD.</p>
+        </div>
+    </footer>
+</body>

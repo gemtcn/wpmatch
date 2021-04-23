@@ -1,0 +1,128 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;400;500;700&display=swap");
+
+$font-primary: "Noto Sans JP", sans-serif;
+
+// Body
+body {
+  font-family: $font-primary;
+  @include font(13px, 400, 27px);
+  color: $color-text;
+  background-color: $color-white-primary;
+  overflow-x: hidden;
+  letter-spacing: 0.5px;
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+#content {
+  padding: 37px 0 90px;
+  @media screen and (max-width: $mobile) {
+    padding: 30px 0 77px;
+  }
+  &.sub-page {
+    padding: 0;
+  }
+}
+
+.container {
+  padding: 0 15px;
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+div[class^="col-"] {
+  padding: 0 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    @include translate(0, -50%);
+    content: "";
+    width: 19px;
+    height: 19px;
+    border: 1px solid #707070;
+    background-color: $color-white-primary;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    left: 1px;
+    top: -2px;
+    width: 7px;
+    height: 13px;
+    border: solid $color-black-primary;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: none;
+  }
+  &:checked {
+    &:after {
+      display: block;
+    }
+  }
+}
+
+// Button
+.button-01 {
+  background-color: $color-pink-primary;
+  @include font(16px, 700, 35px);
+  letter-spacing: -0.3px;
+  color: $color-white-primary;
+  padding: 8px 18px;
+  &:hover {
+    color: $color-white-primary;
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: 11px;
+  }
+}
+
+.button-02 {
+  @extend .button-01;
+  background-color: $color-blue-primary;
+}
+
+.show {
+  height: auto;
+  max-height: unset;
+  @include transition;
+}
+
+.title-section {
+  @include font(20px, 700, 28px);
+  margin: 0 0 27px;
+  @media screen and (max-width: $mobile) {
+    font-size: 18px;
+  }
+}
+
+// Back toppage button
+.back-toppage {
+  @include font(16px, 700, 24px);
+  padding: 14px 100px;
+  border: 1px solid $color-gray;
+  display: inline-block;
+}
+
+// Content has border
+
+.has-border {
+  border: 1px solid $color-gray;
+}

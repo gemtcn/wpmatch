@@ -1,0 +1,45 @@
+// Color
+$color-black-primary: #000;
+$color-white-primary: #fff;
+$color-text: #434343;
+$color-gray: #F0F0F0;
+
+$color-pink-primary: #FE84DA;
+$color-blue-primary: #0F78D1;
+$color-red-primary: #F00000;
+$color-red-secondary: #C90A0A;
+
+
+$mobile: 480px;
+$tablet: 768px;
+$tablet-large: 1024px;
+
+// Mixin
+@mixin translate($x, $y...) {
+  transform: translate($x, $y);
+  -webkit-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+}
+
+@mixin transition {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+@mixin font($font-size, $font-weight, $line-height) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin limitedText($nums) {
+  display: -webkit-box;
+  -webkit-line-clamp: $nums;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

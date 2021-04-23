@@ -1,0 +1,9 @@
+// Import css from node_modules
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+// Import css
+@import "./variables";
+@import "./reset";
+@import "./global";
+@import "./components";    
